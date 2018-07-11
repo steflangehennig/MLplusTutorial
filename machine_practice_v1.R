@@ -86,7 +86,8 @@ featurePlot(x = trainData[, 1:18],
 
 # selecting important features to determine "important" vars is the recursive feature elimination (RFE) 
 # use most important vars to model on subsets, rank them, iterate through again
-### THIS ISN'T WORKING ###
+### THIS MAY NOT WORK ###
+  # make sure 'CVST' and 'recipes' packages are downloaded. 
 install.packages("randomForest")
 library(randomForest)
 set.seed(100)
